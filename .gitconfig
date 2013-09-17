@@ -1,0 +1,19 @@
+[user]
+	name = post-l
+	email = ludovic.post@epitech.eu
+[credential]
+	helper = cache --timeout=3600
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[core]
+	editor = emacs -nw
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+[push]
+	default = matching
