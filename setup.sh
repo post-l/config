@@ -1,8 +1,16 @@
 #!/bin/bash
 
-sudo pacman -Syu zsh emacs python ipython python-pip nodejs rlwrap
-sudo pip install virtualenv flake8
+if [ -f /etc/arch-release ]; then
+    sudo pacman -Syu zsh emacs python ipython python-pip nodejs rlwrap
+else
+    sudo apt-get install python-software-properties
+    sudo apt-get update
+    sudo apt-get install zsh emacs24 ipython3 python3-pip nodejs rlwrap
+fi
+sudo pip3 install virtualenv flake8
 sudo npm install -g jshint
+
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
 chsh -s /usr/bin/zsh
 
@@ -21,8 +29,4 @@ ln -sb "$PWD/.zshrc" ~
 echo "Now, open emacs and do:
 
 M-x el-get-install RET jedi
-M-x package-install RET flycheck RET
-
-If you want zsh-syntax-highlighting:
-
-yaourt -S zsh-syntax-highlighting"
+M-x package-install RET flycheck RET"

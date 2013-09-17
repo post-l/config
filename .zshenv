@@ -1,6 +1,6 @@
 #~/.zshenv
 
-export PATH="/usr/lib/colorgcc/bin/:/usr/bin:/usr/local/bin:$HOME/bin:/opt:/opt/android-sdk/tools:/opt/android-sdk/platform-tools"
+export PATH="/usr/lib/colorgcc/bin/:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/bin:/opt:/opt/android-sdk/tools:/opt/android-sdk/platform-tools"
 export CCACHE_PATH="/usr/bin"
 
 # Default Viewer/Editor

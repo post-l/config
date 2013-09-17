@@ -82,6 +82,7 @@ alias 'cd..'='cd ..'
 alias emacs='emacs -nw'
 
 alias node='env NODE_NO_READLINE=1 rlwrap node'
+alias nodejs='env NODE_NO_READLINE=1 rlwrap nodejs'
 
 bindkey '^A'    beginning-of-line       # Home
 bindkey "\e[1~" beginning-of-line
@@ -117,4 +118,4 @@ key[PageDown]=${terminfo[knp]}
 [[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
 [[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/git/config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
