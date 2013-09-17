@@ -5,7 +5,7 @@ if [ -f /etc/arch-release ]; then
 else
     sudo apt-get install python-software-properties
     sudo apt-get update
-    sudo apt-get install zsh emacs24 ipython3 python3-pip nodejs rlwrap
+    sudo apt-get install zsh emacs24 ipython3 python3-pip nodejs rlwrap npm
 fi
 sudo pip3 install virtualenv flake8
 sudo npm install -g jshint
