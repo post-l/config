@@ -1,7 +1,8 @@
 #!/bin/bash
 
-sudo pacman -Syu emacs python ipython pip nodejs
+sudo pacman -Syu emacs python ipython pip nodejs rlwrap
 sudo pip install virtualenv flake8
+npm install -g jshint
 
 ln -sb .gitconfig ~
 ln -sb .emacs ~

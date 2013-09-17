@@ -81,6 +81,8 @@ alias sl='ls'
 alias 'cd..'='cd ..'
 alias emacs='emacs -nw'
 
+alias node='env NODE_NO_READLINE=1 rlwrap node'
+
 bindkey '^A'    beginning-of-line       # Home
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[H"  beginning-of-line
