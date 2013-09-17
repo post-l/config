@@ -4,11 +4,13 @@ sudo pacman -Syu emacs python ipython pip nodejs rlwrap
 sudo pip install virtualenv flake8
 sudo npm install -g jshint
 
-ln -sb .gitconfig ~
-ln -sb .emacs ~
-ln -sf .emacs.d ~
-ln -sb .zshenv ~
-ln -sb .zshrc ~
+sudo cp clean /usr/bin/
+
+ln -sb "$PWD/.gitconfig" ~
+ln -sb "$PWD/.emacs" ~
+ln -sf "$PWD/.emacs.d" ~
+ln -sb "$PWD/.zshenv" ~
+ln -sb "$PWD/.zshrc" ~
 
 instruction="
 Now, open emacs and do:
