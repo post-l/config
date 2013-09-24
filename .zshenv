@@ -6,7 +6,7 @@ export CCACHE_PATH="/usr/bin"
 # Default Viewer/Editor
 export VISUAL="emacs -nw"
 export EDITOR="emacs -nw"
-export PAGER="less"
+export PAGER="most"
 
 export TERM="xterm"
 

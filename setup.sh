@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ -f /etc/arch-release ]; then
-    sudo pacman -Syu zsh emacs python ipython python-pip nodejs rlwrap
+    sudo pacman -Syu zsh emacs python ipython python-pip nodejs rlwrap most
 else
     sudo apt-get install python-software-properties
     sudo apt-get update
-    sudo apt-get install zsh emacs24 ipython3 python3-pip nodejs rlwrap npm
+    sudo apt-get install zsh emacs24 ipython3 python3-pip nodejs rlwrap npm most
 fi
 sudo pip3 install virtualenv flake8
 sudo npm install -g jshint
