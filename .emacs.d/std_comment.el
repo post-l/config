@@ -5,7 +5,7 @@
 ;; Login   <fred@epita.fr>
 ;;
 ;; Started on  Thu Sep  9 23:34:05 1993 Frederic Denis
-;; Last update Tue Sep 20 16:28:07 2011 Kevin Aujoulet
+;; Last update Thu Oct 24 10:05:17 2013 Ludovic Post
 ;;
 ;; Based on Comment routines by Isaac
 ;;
@@ -66,6 +66,7 @@
                         ("Fundamental"          . std-fundamental-alist)
                         ("Shell-script"         . std-sscript-alist)
                         ("Makefile"             . std-makefile-alist)
+			("GNUmakefile"		. std-makefile-alist)
                         ("BSDmakefile"          . std-makefile-alist)
                         ("Perl"                 . std-cperl-alist)
                         ("CPerl"                . std-cperl-alist)
@@ -240,4 +241,3 @@
 	  '(lambda ()
 	     (define-key tex-mode-map ""
 	       'comment-region)))
-
